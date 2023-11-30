@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { serviceName } from "../services";
+import { serviceName } from "../../services";
 import Navigation from "../components/molecules/Navigation";
 
 const Mycharacter = () => {

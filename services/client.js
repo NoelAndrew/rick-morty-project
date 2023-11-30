@@ -1,4 +1,4 @@
-export const HttpClient = ({ baseUrl }) => {
+const HttpClient = ({ baseUrl }) => {
     const get = (url) => fetch(baseUrl + url, {
         method: 'GET',
     }).then(res => res.json());
@@ -7,3 +7,4 @@ export const HttpClient = ({ baseUrl }) => {
         get,
     }
 }
+export default HttpClient;

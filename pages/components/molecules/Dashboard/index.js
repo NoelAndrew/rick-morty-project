@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
-import { serviceList } from '../../../services';
+import { serviceList } from '../../../../services';
 import CharacterCard from '../../atoms/CharacterCard';
 
 const Dashboard = () => {
