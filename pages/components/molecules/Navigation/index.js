@@ -65,7 +65,7 @@ const Navbar = () => {
           <div>
             <input
               type="text"
-              placeholder="Search or jump to..."
+              placeholder="Search character..."
               value={searchTerm}
               onChange={handleChange}
               className="h-8 w-full px-2 bg-transparent border-0 outline-none"

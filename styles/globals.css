@@ -27,9 +27,18 @@ h1 {
   font-weight: 600;
 }
 .charac-container-index {
+  background-color: #0C7D85;
+  color: #ffff;
+  border: 1px solid #B2DF28;
   width: 100%;
 }
+.charac-container-index:hover{
+  background-color: #11929b;
+}
 .charac-container {
+  background-color: #0C7D85;
+  color: #ffff;
+  border: 1px solid #B2DF28;
   width: 70%;
 }
 .button {
@@ -66,4 +75,9 @@ h1 {
   width: fit-content;
   padding: 10px;
   border-radius: 10px;
+}
+@media (max-width: 900px) {
+  .charac-container {
+    width: 90%;
+  }
 }
