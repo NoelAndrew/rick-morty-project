@@ -1,5 +1,4 @@
 import { serviceID } from '@/services';
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
 

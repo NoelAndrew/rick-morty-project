@@ -11,7 +11,7 @@ const CharacterCard=({ img, nombre, location ,species, stat ,index})=>{
                 <p className="mb-3 font-normal">
                     {location}
                 </p>
-                <p>{species}</p>
+                <p className="mb-3">{species}</p>
                 <div className="flex justify-center">
                     <div className={`${stat === "Alive" ? "alive" : stat === "Dead" ? "dead" : stat === "unknown" ? "unknown" : "" }`}>
                         <p>{stat}</p>
