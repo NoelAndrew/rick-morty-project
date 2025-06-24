@@ -1,9 +1,15 @@
-const getCharacterList = (httpClient) => {
-    const getList = (page = 1) => httpClient.get(`/character/?page=${page}`);
+import axios, { AxiosError } from "axios";
 
-    return {
-        getList,
+const API_URL = 'https://rickandmortyapi.com/api/'
+
+export const getCharacterList = async (page) => {
+    try {
+      const { data } = await axios.get(`${API_URL}/character/?page=${page}`);
+      return data;
+    } catch (error) {
+      if (error instanceof AxiosError) {
+        console.error(`Error fetching all products: ${error.message}`);
+      }
+      throw error;
     }
-};
-
-export default getCharacterList;
+  };

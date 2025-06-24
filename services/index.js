@@ -1,7 +1,7 @@
 import rickServiceName from './rickServiceName';
-import getCharacterList from './getCharacterList';
 import rickServiceID from './rickServiceId';
 import axios from 'axios';
+import { getCharacterList } from './getCharacterList';
 
 const client = axios.create({ baseURL: 'https://rickandmortyapi.com/api/' });
 
