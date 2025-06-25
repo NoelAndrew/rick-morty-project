@@ -1,4 +1,4 @@
-import Dashboard from "./components/molecules/dashboard";
+import Dashboard from "./components/molecules/dashboard/index,js";
 
 export default function Home() {
   return (
