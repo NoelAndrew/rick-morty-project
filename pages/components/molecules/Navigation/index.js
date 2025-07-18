@@ -71,7 +71,7 @@ const Navbar = () => {
             />
           </div>
           {isListOpen && (
-            <div className="result-list overflow-y-auto max-h-40 mt-2 absolute mt-8 bg-gray-700">
+            <div className="result-list overflow-y-auto max-h-40 mt-2 absolute mt-8 bg-gray-700 z-[10000]">
               <ul>
                 {searchResults.map((result) => (
                   <Link key={result.id} href={`../../Character/${result.id}`} onClick={closeList}>
